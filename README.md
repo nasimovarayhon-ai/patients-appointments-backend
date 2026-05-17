@@ -1,44 +1,45 @@
-# Patients Appointments Backend
+# Patients Appointments Application
 
-Simple Node.js + Express backend for university assignment.
+This project is a full-stack application for managing patients and appointments.
 
-## Entities
+## Backend
 
-### Patient
-- id
-- firstName
-- lastName
-- dateOfBirth
-- phone
-- email
+The backend was created using Node.js and Express.js. It provides CRUD functionality for two related data entities:
 
-### Appointment
-- id
-- patientId
-- date
-- time
-- doctorName
-- reason
+- Patients
+- Appointments
 
-## Relationship
+One patient can have multiple appointments.
 
-One Patient can have many Appointments.
+## Frontend
 
-## Run project
+The frontend part is implemented using React.
 
-npm install
-npm start
+## Main frontend routes
 
-## Server
+- `/` - Home page
+- `/patients` - List of patients
+- `/patients/new` - Create new patient
+- `/patients/:id` - Patient detail
+- `/patients/:id/edit` - Edit patient
+- `/appointments` - List of appointments
+- `/appointments/new` - Create new appointment
+- `/appointments/:id` - Appointment detail
+- `/appointments/:id/edit` - Edit appointment
 
-http://localhost:3000
+## CRUD functionality
 
-## API Endpoints
+The application is designed to support:
 
-### Patient
-POST /patient/create  
-GET /patient/list
+- Create patients and appointments
+- Read patients and appointments
+- Update patients and appointments
+- Delete patients and appointments
 
-### Appointment
-POST /appointment/create  
-GET /appointment/list
+## SPA structure
+
+The React frontend uses a Single Page Application structure with navigation between Patients and Appointments pages.
+
+## GitHub repository
+
+This repository contains the backend project and the added frontend structure for the Frontend assignment.
